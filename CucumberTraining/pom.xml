@@ -65,6 +65,21 @@
 		    <scope>test</scope>
 		</dependency>
 		
+		<dependency>
+		  <groupId>org.testng</groupId>
+		  <artifactId>testng</artifactId>
+		  <version>6.9.10</version>
+		  <scope>test</scope>
+		</dependency>
+		
+		
+			<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+		<dependency>
+		    <groupId>info.cukes</groupId>
+		    <artifactId>cucumber-testng</artifactId>
+		    <version>1.2.5</version>
+		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
 		<dependency>
 		    <groupId>org.mockito</groupId>
@@ -72,7 +87,8 @@
 		    <version>1.10.19</version>
 		    <scope>test</scope>
 		</dependency>
-	    
+		
+	
 	    
 	</dependencies>
 

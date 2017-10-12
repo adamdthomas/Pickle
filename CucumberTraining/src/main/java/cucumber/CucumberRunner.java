@@ -1,14 +1,20 @@
 package cucumber;
 
+
+
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
+
+@RunWith(Cucumber.class) //--Junit
 @CucumberOptions
-	(plugin = {"pretty", "json:target/"},
-	features = {"src/main/java/cucumber/"})
+	(plugin = {"pretty", "html:target/html"},
+	features = {"src/test/resources/features/"})
+
+//@CucumberOptions(features = {"src/test/resources/features/"}, glue = "cucumber/steps") //extends AbstractTestNGCucumberTests
 public class CucumberRunner {
 
 }
